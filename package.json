@@ -1,0 +1,35 @@
+{
+  "name": "glide-together",
+  "description": "A multiplayer gliding WebXR game\n",
+  "version": "0.1.0",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "webpack",
+    "postbuild": "surge . https://glide-together.surge.sh/; true",
+    "watch": "webpack --watch --mode development",
+    "start": "budo --live --verbose --port 3000 --open --ssl --cors",
+    "start-http": "budo --live --verbose --port 3000 --open --cors",
+    "test": "open jasmine/SpecRunner.html   # on OSes other than OS X, load SpecRunner.html in a browser"
+  },
+  "devDependencies": {
+    "budo": "^11.6.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-glsl-loader": "^1.0.1"
+  },
+  "keywords": [
+    "fly",
+    "glide",
+    "glider",
+    "game",
+    "aframe",
+    "aframe-scene",
+    "webxr",
+    "webvr",
+    "vr"
+  ]
+}
